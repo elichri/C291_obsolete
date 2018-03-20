@@ -1,17 +1,25 @@
 /* 
  * ------ Filename: main.c ------ 
- * Description: Basic C program to print out hello world! 
- * Author: Adeel Bhutta
+ * Description: C program to fulfill excercise 1 requirements. 
+ * Author: Elijah Christy
 */
 
 #include <stdio.h>
+#include <unistd.h>
 
 int main(void) {
-  int myNumber = 0;
-  printf("Hello: Elijah1!\n");
-  printf("Please enter a number and press ENTER: ");
-  scanf("%d", &myNumber);  
-  printf("Here is the number yor entered: %d\n",myNumber);
+  int ID_number = 0;
+  printf(" \"Hello, Welcome to Spring 2018\\C291/\" \n");
+  printf("Please enter your user ID number and press ENTER: ");
+  scanf("%d", &ID_number);  
+  printf("ID: %010d\n",ID_number);
+   
+while(1)
+  {
+    sleep(1);
+    printf("\t*");
+    fflush(stdout);
+  }
   return(0); 
 }
 
