@@ -6,10 +6,11 @@
 
 int main()
 {
-	int number = 7.2899, b = 9;
-	float alphabet = 'x';
-	printf("%Lf\n",&number);
-	printf("%d",&b);
-	printf("The ASCII value of character 'x' is : %f",alphabet);
-	return 0;
+  float number = 7.2899;
+  int b = 9;
+  int alphabet = 'x';
+	printf("%f\n",number);
+	printf("%d\n",b);
+	printf("The ASCII value of character 'x' is : %d\n",alphabet);
+	return(0);
 }

@@ -5,10 +5,11 @@
 #include<stdio.h>
 
 int main (void){
-  int limit = 100, sum, counter;
-  for(counter = 1; counter < limit-1; counter = counter+2){
-    sum += sum+counter;
+  int limit = 100;
+  int sum, counter;
+  for(counter = 1; counter < limit; counter = counter+2){
+    sum += counter;
 
   }
-    printf("Sum = %d\n", counter);
+    printf("Sum = %d\n", sum);
 }

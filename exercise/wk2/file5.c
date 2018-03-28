@@ -25,7 +25,7 @@ int main()
 
    if(birthYr < LOYEAR){
       printf( "No one is that old\n");}
-   else if(birthYr == HIYEAR){
+   else if(birthYr > HIYEAR){
          printf( "You are too little to be using a computer\n");}
       else{
 	 printf( "Valid year\n");}
@@ -33,7 +33,10 @@ int main()
    if(birthMo > HIGHMO){
       printf( "Invalid month\n");}
 
-   else if(birthMo == 1 || birthMo == 1 || birthMo == 2 || birthMo == 2){
+   else if(birthMo < HIGHMO){
+     printf( "Valid month\n");}
+
+   else if(birthMo == 1){
          if(birthDay <= HIDAY4){
 	    printf( "Valid day\n");}
          else{
@@ -53,9 +56,9 @@ int main()
 		  printf( "Invalid day for month " , birthMo , " in " , birthYr );}
 
 	  if(birthDay <= HIDAY1){
-                printf( "Valid day"  );}
+                printf( "Valid day\n");}
             else{
 	        printf( "Invalid day for month ", birthMo );}
 			
-   return "X";
+	  return(0);
 }
